@@ -8,8 +8,8 @@ public class Movement2 : MonoBehaviour {
     public float speed;
     public float turningSpeed;
 
-
-    void Update() {
+    void Update()
+    {
 
         if (Input.GetKey(KeyCode.UpArrow)) {
             rb.MovePosition(rb.position + rb.transform.forward * Time.deltaTime * speed);
