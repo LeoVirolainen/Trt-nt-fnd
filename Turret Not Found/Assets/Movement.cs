@@ -2,33 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
-{
+public class Movement : MonoBehaviour {
 
     public Rigidbody rb;
     public float speed;
     public float turningSpeed;
 
+    public KeyCode forward;
+    public KeyCode reverse;
+    public KeyCode left;
+    public KeyCode right;
 
-    void Update()
-    {
 
-        if (Input.GetKey(KeyCode.S))
-        {
+    void Update() {
+
+        if (Input.GetKey(forward)) {
             rb.MovePosition(rb.position + rb.transform.forward * Time.deltaTime * speed);
         }
-        if (Input.GetKey(KeyCode.W))
-        {
+        if (Input.GetKey(reverse)) {
             rb.MovePosition(rb.position - rb.transform.forward * Time.deltaTime * speed);
         }
 
-        if (Input.GetKey(KeyCode.A))
-        {
+        if (Input.GetKey(left)) {
             var dr = Quaternion.Euler(0, -turningSpeed * Time.deltaTime, 0);
             rb.MoveRotation(rb.rotation * dr);
         }
-        if (Input.GetKey(KeyCode.D))
-        {
+        if (Input.GetKey(right)) {
             var dr = Quaternion.Euler(0, turningSpeed * Time.deltaTime, 0);
             rb.MoveRotation(rb.rotation * dr);
         }
