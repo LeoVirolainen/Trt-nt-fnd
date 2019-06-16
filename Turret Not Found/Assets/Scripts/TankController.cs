@@ -7,6 +7,7 @@ public class TankController : MonoBehaviour {
     public Rigidbody rb;
     public float speed;
     public float turningSpeed;
+    public float armour = 3f;
 
     public KeyCode forward;
     public KeyCode reverse;
