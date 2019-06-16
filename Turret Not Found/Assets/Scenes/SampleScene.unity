@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   output: {fileID: 79342285}
   shell: {fileID: 4884038851560631847, guid: de5f0ecb29bd11a479512eca2cc03a83, type: 3}
-  launchForce: 125
+  launchForce: 75
   reloadTime: 2
   fireKey: 103
 --- !u!1 &335777365
@@ -333,8 +333,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3101454, y: 0.5818634, z: 0.45987308}
-  m_Center: {x: 0.0053990483, y: 0.72187805, z: 1.1213573}
+  m_Size: {x: 1.5487753, y: 1.1243668, z: 1.4571089}
+  m_Center: {x: 0.004339695, y: 0.5656624, z: 0.9508394}
 --- !u!33 &335777368
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -376,7 +376,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &335777371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 335777370}
-  speed: 7
+  speed: 8.5
   turningSpeed: 120
   armour: 3
   forward: 119
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1069211014}
-  speed: 7
+  speed: 8.5
   turningSpeed: 120
   armour: 3
   forward: 273
@@ -880,7 +880,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &1069211015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,8 +905,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3101454, y: 0.5818634, z: 0.45987308}
-  m_Center: {x: 0.0053990483, y: 0.72187805, z: 1.1213573}
+  m_Size: {x: 1.5487753, y: 1.1243668, z: 1.4571089}
+  m_Center: {x: 0.004339695, y: 0.5656624, z: 0.9508394}
 --- !u!33 &1069211017
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   output: {fileID: 1696018398}
   shell: {fileID: 4884038851560631847, guid: de5f0ecb29bd11a479512eca2cc03a83, type: 3}
-  launchForce: 125
+  launchForce: 75
   reloadTime: 2
   fireKey: 303
 --- !u!4 &1878903149 stripped
