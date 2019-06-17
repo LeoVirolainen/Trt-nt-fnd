@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class frontDamage : MonoBehaviour {
-    public BoxCollider frontCol;
+    public float dmgOnPene;
 
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "projectile") {
-            print("lose 1 armour!");
-            GetComponent<TankController>().armour -= 1f;
+            print("Penetration!");
+            GetComponent<TankController>().armour -= dmgOnPene;
             Destroy(other.gameObject);
         }
     }
@@ -19,7 +19,7 @@ public class frontDamage : MonoBehaviour {
         }
     }
 
-    private void Tankdie() {
+    public void Tankdie() {
         GetComponent<TankController>().speed = 0f;
         GetComponent<TankController>().turningSpeed = 0f;
         GetComponentInChildren<tankShooting>().enabled = false;
