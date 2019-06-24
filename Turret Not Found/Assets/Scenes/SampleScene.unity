@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4323fde32dbcebf4195ad58c05f28e84, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 40fa5696077438a49bbce1aac01eba84, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.334
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.49370134, g: 0.5594697, b: 0.5506157, a: 0.334}
+  m_IndirectSpecularColor: {r: 0.52450436, g: 0.47402388, b: 0.3973959, a: 0.334}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -299,9 +299,8 @@ GameObject:
   - component: {fileID: 335777369}
   - component: {fileID: 335777368}
   - component: {fileID: 335777370}
-  - component: {fileID: 335777371}
   - component: {fileID: 335777367}
-  - component: {fileID: 335777372}
+  - component: {fileID: 335777371}
   - component: {fileID: 335777366}
   m_Layer: 0
   m_Name: Tank1
@@ -334,8 +333,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8011909, y: 1.1243668, z: 1.3175024}
-  m_Center: {x: -0.0036513805, y: 0.5656624, z: 0.86465585}
+  m_Size: {x: 1.5558637, y: 1.1243668, z: 2.5659454}
+  m_Center: {x: -0.0009254217, y: 0.5656624, z: 0.24043417}
 --- !u!33 &335777368
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -398,19 +397,6 @@ MonoBehaviour:
   reverse: 115
   left: 97
   right: 100
---- !u!65 &335777372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335777365}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7992239, y: 0.8125458, z: 1.2195469}
-  m_Center: {x: -0.005328059, y: 0.39956665, z: -0.41982788}
 --- !u!1 &402855060
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,9 +835,8 @@ GameObject:
   - component: {fileID: 1069211018}
   - component: {fileID: 1069211017}
   - component: {fileID: 1069211014}
-  - component: {fileID: 1069211013}
   - component: {fileID: 1069211016}
-  - component: {fileID: 1069211019}
+  - component: {fileID: 1069211013}
   - component: {fileID: 1069211015}
   m_Layer: 0
   m_Name: Tank2
@@ -920,8 +905,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3360444, y: 1.1243668, z: 1.4571089}
-  m_Center: {x: 0.004339695, y: 0.5656624, z: 0.9508394}
+  m_Size: {x: 1.5405594, y: 1.1243668, z: 2.686898}
+  m_Center: {x: -0.0024774075, y: 0.5656624, z: 0.33594465}
 --- !u!33 &1069211017
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -948,19 +933,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!65 &1069211019
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069211012}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7992239, y: 0.8125458, z: 1.2195469}
-  m_Center: {x: -0.005328059, y: 0.39956665, z: -0.41982788}
 --- !u!1 &1118543346
 GameObject:
   m_ObjectHideFlags: 0
