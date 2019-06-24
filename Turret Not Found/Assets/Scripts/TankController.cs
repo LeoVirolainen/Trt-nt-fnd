@@ -13,6 +13,7 @@ public class TankController : MonoBehaviour {
     public KeyCode reverse;
     public KeyCode left;
     public KeyCode right;
+    public KeyCode fireKey;
 
 
     void Update() {
@@ -32,5 +33,17 @@ public class TankController : MonoBehaviour {
             var dr = Quaternion.Euler(0, turningSpeed * Time.deltaTime, 0);
             rb.MoveRotation(rb.rotation * dr);
         }
+
+        if (Input.GetKeyDown(fireKey)) {
+            speed = speed / 2;
+            turningSpeed = turningSpeed / 2;
+        }
+        if (Input.GetKeyUp(fireKey)) {
+            speed = speed * 2;
+            turningSpeed = turningSpeed * 2;
+        }
+       
+        
+
     }
 }

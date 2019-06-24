@@ -22,7 +22,7 @@ public class tankShooting : MonoBehaviour {
         else if (!fired) {
             Shoot();
         }
-        else if (Input.GetKeyDown(fireKey)) {
+        else if (Input.GetKeyUp(fireKey)) {
             fired = false;
         }
     }
