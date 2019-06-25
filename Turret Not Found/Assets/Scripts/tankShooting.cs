@@ -9,6 +9,9 @@ public class tankShooting : MonoBehaviour {
     public float launchForce;
     public float reloadTime = 3f;
 
+    public AudioSource shootingSounds;
+    public AudioClip shootSound;
+
     private bool isReloading = false;
     private bool fired = true;
 
@@ -31,7 +34,9 @@ public class tankShooting : MonoBehaviour {
         fired = true;
         Rigidbody shellInstance = Instantiate(shell, output.position, output.rotation) as Rigidbody;
         shellInstance.velocity = launchForce * output.forward;
+        shootingSounds.PlayOneShot(shootSound);
         StartCoroutine(Reload());
+
     }
 
     IEnumerator Reload() {
