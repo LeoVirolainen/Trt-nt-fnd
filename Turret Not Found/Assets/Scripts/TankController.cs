@@ -15,6 +15,8 @@ public class TankController : MonoBehaviour {
     public KeyCode right;
     public KeyCode fireKey;
 
+    public Animator TankAnimr;
+
 
     void Update() {
 
@@ -43,7 +45,19 @@ public class TankController : MonoBehaviour {
             turningSpeed = turningSpeed * 2;
         }
        
-        
+        //ANIMATION TRIGGERS
 
+        if (Input.GetKeyDown(forward)) {
+            TankAnimr.Play("MoveStart");
+        }
+        if (Input.GetKeyUp(forward)) {
+            TankAnimr.Play("MoveStop");
+        }
+        if (Input.GetKeyDown(reverse)) {
+            TankAnimr.Play("MoveStop");
+        }
+        if (Input.GetKeyUp(reverse)) {
+            TankAnimr.Play("MoveStart");
+        }
     }
 }

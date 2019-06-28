@@ -17,6 +17,8 @@ public class tankShooting : MonoBehaviour {
 
     public KeyCode fireKey;
 
+    public Animator tankAnimr; 
+
     void Update() {
 
         if (isReloading) {
@@ -36,6 +38,8 @@ public class tankShooting : MonoBehaviour {
         shellInstance.velocity = launchForce * output.forward;
         shootingSounds.PlayOneShot(shootSound);
         StartCoroutine(Reload());
+
+        tankAnimr.Play("Gun");
 
     }
 

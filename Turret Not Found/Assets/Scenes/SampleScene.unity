@@ -290,6 +290,7 @@ MonoBehaviour:
   shootingSounds: {fileID: 2105315764}
   shootSound: {fileID: 8300000, guid: ecfaac539b311c647b9498b974394319, type: 3}
   fireKey: 103
+  tankAnimr: {fileID: 335777372}
 --- !u!1 &335777365
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +305,7 @@ GameObject:
   - component: {fileID: 335777367}
   - component: {fileID: 335777371}
   - component: {fileID: 335777366}
+  - component: {fileID: 335777372}
   m_Layer: 0
   m_Name: Tank1
   m_TagString: Untagged
@@ -400,6 +402,26 @@ MonoBehaviour:
   left: 97
   right: 100
   fireKey: 103
+  TankAnimr: {fileID: 335777372}
+--- !u!95 &335777372
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335777365}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c5c23b980c6a1d4fb8ce2355213fbd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &402855060
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +627,36 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 39803d2645ddb754a9f40732dc69aab7, type: 2}
+    - target: {fileID: 1070320300503445984, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0057332614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070320300503445984, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0031588995
+      objectReference: {fileID: 0}
+    - target: {fileID: -5282245804078037656, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.536744e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: -5282245804078037656, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0076380544
+      objectReference: {fileID: 0}
+    - target: {fileID: -5282245804078037656, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0041126464
+      objectReference: {fileID: 0}
+    - target: {fileID: -5282245804078037656, guid: 9b36013505a32694c969c13a1e65b262,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.087075
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b36013505a32694c969c13a1e65b262, type: 3}
 --- !u!1 &705507993
@@ -841,6 +893,7 @@ GameObject:
   - component: {fileID: 1069211016}
   - component: {fileID: 1069211013}
   - component: {fileID: 1069211015}
+  - component: {fileID: 1069211019}
   m_Layer: 0
   m_Name: Tank2
   m_TagString: Untagged
@@ -869,6 +922,7 @@ MonoBehaviour:
   left: 276
   right: 275
   fireKey: 303
+  TankAnimr: {fileID: 1069211019}
 --- !u!54 &1069211014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -927,7 +981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069211012}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 20, y: 71.283, z: -0}
+  m_LocalPosition: {x: 20, y: 71.219, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1878903149}
@@ -937,6 +991,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!95 &1069211019
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069211012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c5c23b980c6a1d4fb8ce2355213fbd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1118543346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1177,7 @@ Transform:
   m_GameObject: {fileID: 1253752030}
   m_LocalRotation: {x: 0.4330127, y: 0.07945937, z: 0.24999997, w: 0.86237246}
   m_LocalPosition: {x: -7.1, y: 3.6, z: 25.8}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 4.49, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 1625890884}
   m_RootOrder: 2
@@ -1195,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 1323868879}
   m_LocalRotation: {x: 0.4924038, y: 0.36961606, z: 0.08682411, w: 0.78318834}
   m_LocalPosition: {x: 21.97, y: 5.66, z: -26.3}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 4.49, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1625890884}
   m_RootOrder: 1
@@ -1316,7 +1389,7 @@ Transform:
   m_GameObject: {fileID: 1621775067}
   m_LocalRotation: {x: 0.4980973, y: 0.5597258, z: -0.04357786, w: 0.6608381}
   m_LocalPosition: {x: 34.4, y: 5.5, z: 26.6}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 4.49, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1625890884}
   m_RootOrder: 3
@@ -1463,6 +1536,7 @@ MonoBehaviour:
   shootingSounds: {fileID: 2105315764}
   shootSound: {fileID: 8300000, guid: 0217c75dcbc14e14ebb85efff1fec22d, type: 3}
   fireKey: 303
+  tankAnimr: {fileID: 1069211019}
 --- !u!4 &1878903149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9b36013505a32694c969c13a1e65b262,
@@ -1497,7 +1571,7 @@ Transform:
   m_GameObject: {fileID: 1911419708}
   m_LocalRotation: {x: 0.46193978, y: 0.19134173, z: 0.19134173, w: 0.84462327}
   m_LocalPosition: {x: 13.1812525, y: 1.9079399, z: -0.64317536}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 4.49, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 1625890884}
   m_RootOrder: 0
